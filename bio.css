@@ -7,14 +7,14 @@
         font-family: 'Sans-serif'
         line-height: 1.6;
         padding: 20px;
-        background-color: white; 
+        background-color: grey; 
         , sans-serif; }
         header {
         text-align: center;
         margin-bottom: 20px;
         }
         .profile-img {
-        width: 150px;
+        width: 50%;
         height: auto;
         }
         h1 
@@ -24,9 +24,11 @@
             }
             .bio, .projects {
             margin-bottom: 20px;
+            text-align: center;
             }
             a {
-            color: #3a1aec;
+            text-align: center;
+            color: #5042d1;
             text-decoration: none;
             }
             footer {
