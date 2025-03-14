@@ -1,34 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
+    <head>
+    <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Abbi's Bio</title>
 <link rel="stylesheet" href="bio.css">
 </head>
 <header>
-    <img src="phoenixAZ.jpg" alt="Phoenix AZ Horizon" class="profile-img">
     <h1>Abbi</h1>
     <p>Scrum Master, mom of 2 toddlers and 1 dauchshund, amateur baker, soon to be full-stack developer.</p>
 </header>
 <body>
 <main>
+    <figure id="img-div">
+        <img
+          id="image"
+          src="phoenixAZ.jpg"
+          alt="photo of the phoenix valley behind a cactus./>
+          >
+        <figcaption id="img-caption">
+           Phoenix, AZ
+        </figcaption>
+      </figure>
     <section class="bio">
        <h1> About Me</h1>
         <p>I am an experience scrum master specialized in humanizing the developer experience in the evolving AI world. I create and build specialized workshops for advanced problem-solving, streamline dependency removal, and emphatically instill a passion for experiementation and growth mindset on my teams.</p>
 </section>
 <section class="projects">
     <h2>Projects</h2>
-    <p>
-        <ul>
-        <li><a href="https://amcgowan23.github.io/Company-Landing-Page/"
-        target="_blank">Company Landing Page</a></li>
-        <li><a href="https://amcgowan23.github.io/phase1project/"
-        target="_blank">Tribute Page</a></li>
-        <li><a href="https://amcgowan23.github.io/personal_portfolio/#projects"
-        target="_blank">Personal Portfolio</a></li>
-    </ul>
-    </p>
+    <div class="col-md-4">
+        <div class="card">
+          <p><a href="file:///C:/phase1project/index.html">Tribute Page</a></p> 
+        </div>
+    </div>
+  <div class="col-md-4">
+         <div class="card">
+          <p><a href="https://amcgowan23.github.io/personal_portfolio/">Personal Portfolio</a></p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+         <p><a href="https://amcgowan23.github.io/Company-Landing-Page/">Agile Oasis Company Landing Page</a></p>
+       </div>
+   </div>
 </section>
 </main>
 <footer>
@@ -39,7 +53,7 @@
             </a>
             <a href="https://www.instagram.com/">
                 <img src="instagram.jpg" alt="instagram icon" class="img-fluid" /> <!-- Add img-fluid class for responsiveness -->
-            </a> 
+            </a>
         </p>
     </p>
 </footer>

@@ -4,9 +4,50 @@
     box-sizing: border-box;
     }
     header{ 
+            background-color: #837d7d;
+            color: #black;
+            padding: 25px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            color: #0f0f0f;
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        p {
+            color: #0f0f0f;
         a:hover { 
             text-decoration: underline }  
     }
+    #img-div {
+        background-color: #d3d3d3;
+        padding: 10px;
+        margin: 0;
+        max-width: 1200px; /* Limit max width */
+        margin: auto; /* Center the div */
+    }
+    
+    #img-div img {
+        max-width: 100%; /* Responsive image */
+        display: block; /* Remove extra space below image */
+        margin: auto; /* Center the image */
+        width: 800px;
+        height: 300px;
+    } 
+      .photos img {
+        overflow-clip-margin: content-box;
+        overflow: clip;}
+      
+      #img-caption {
+        margin: 15px 0 5px 0;
+      }
+      
+      @media (max-width: 460px) {
+        #img-caption {
+          font-size: 1.4rem;
+        }
+      }
     body {
         font-family: 'Sans-serif'
         line-height: 1.6;
@@ -17,10 +58,7 @@
         text-align: center;
         margin-bottom: 20px;
         }
-        .profile-img {
-        width: 50%;
-        height: auto;
-        }
+     
         h1 
         {
         text-align: center; 
@@ -51,21 +89,16 @@
             footer a:hover {
                 text-decoration: underline; /* Underline on hover */
             }
-            
-            .social-media-icons {
-                display: flex;
-                justify-content: center;
-                gap: 15px; 
-                margin-top: 10px; 
+
+            .img-fluid {
+                width: 20px; 
+                height: 20px; 
+                aspect-ratio: 3/2;
+                object-fit: contain;
+                mix-blend-mode: color-burn
             }
             
-            .social-media-icons img {
-                width: 40px; 
-                height: auto; 
-                transition: transform 0.3s ease; 
-            }
-            
-            .social-media-icons a:hover img {
+            .social-media a:hover img {
                 transform: scale(1.1); 
             }
            
